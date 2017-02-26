@@ -59,7 +59,6 @@ Window {
                         anchors.verticalCenter: parent.verticalCenter
                         height: parent.cardImageHeight
                         fillMode: Image.PreserveAspectFit
-//                        source: "Cards/AS.svg"
                         source: "Cards/"+simulator.p3CardString+".svg"
                     }
 
