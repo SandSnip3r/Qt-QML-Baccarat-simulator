@@ -14,7 +14,7 @@ void GameLoop::run() {
         }
         Game game = shoe.getNextGame();
         emit gameFinished(game);
-        QThread::usleep(333333);
+        QThread::usleep(1);
     }
 }
 
