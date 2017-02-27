@@ -52,6 +52,7 @@ Window {
                     property double cardImageHeight: height * .95
                     property double betweenCardMargin: 5
                     property string imageExtension: ".svg"
+                    property string defaultCardPath: "Cards/AS"+imageExtension
 
                     Image {
                         //P3
@@ -60,7 +61,8 @@ Window {
                         anchors.verticalCenter: parent.verticalCenter
                         height: parent.cardImageHeight
                         fillMode: Image.PreserveAspectFit
-                        source: "Cards/"+simulator.p3CardString+parent.imageExtension
+                        source: (simulator.p3CardString == "") ? parent.defaultCardPath : ("Cards/"+simulator.p3CardString+parent.imageExtension)
+                        visible: (simulator.p3CardString != "")
                     }
 
                     Image {
@@ -119,7 +121,8 @@ Window {
                         anchors.verticalCenter: parent.verticalCenter
                         height: parent.cardImageHeight
                         fillMode: Image.PreserveAspectFit
-                        source: "Cards/"+simulator.b3CardString+parent.imageExtension
+                        source: (simulator.b3CardString == "") ? parent.defaultCardPath : ("Cards/"+simulator.b3CardString+parent.imageExtension)
+                        visible: (simulator.b3CardString != "")
                     }
                 }
             }
