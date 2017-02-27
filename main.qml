@@ -51,6 +51,7 @@ Window {
 
                     property double cardImageHeight: height * .95
                     property double betweenCardMargin: 5
+                    property string imageExtension: ".svg"
 
                     Image {
                         //P3
@@ -59,7 +60,7 @@ Window {
                         anchors.verticalCenter: parent.verticalCenter
                         height: parent.cardImageHeight
                         fillMode: Image.PreserveAspectFit
-                        source: "Cards/"+simulator.p3CardString+".svg"
+                        source: "Cards/"+simulator.p3CardString+parent.imageExtension
                     }
 
                     Image {
@@ -69,7 +70,7 @@ Window {
                         anchors.verticalCenter: parent.verticalCenter
                         height: parent.cardImageHeight
                         fillMode: Image.PreserveAspectFit
-                        source: "Cards/"+simulator.p2CardString+".svg"
+                        source: "Cards/"+simulator.p2CardString+parent.imageExtension
                     }
 
                     Image {
@@ -79,7 +80,7 @@ Window {
                         anchors.verticalCenter: parent.verticalCenter
                         height: parent.cardImageHeight
                         fillMode: Image.PreserveAspectFit
-                        source: "Cards/"+simulator.p1CardString+".svg"
+                        source: "Cards/"+simulator.p1CardString+parent.imageExtension
                     }
 
                     Rectangle {
@@ -98,7 +99,7 @@ Window {
                         anchors.verticalCenter: parent.verticalCenter
                         height: parent.cardImageHeight
                         fillMode: Image.PreserveAspectFit
-                        source: "Cards/"+simulator.b1CardString+".svg"
+                        source: "Cards/"+simulator.b1CardString+parent.imageExtension
                     }
 
                     Image {
@@ -108,7 +109,7 @@ Window {
                         anchors.verticalCenter: parent.verticalCenter
                         height: parent.cardImageHeight
                         fillMode: Image.PreserveAspectFit
-                        source: "Cards/"+simulator.b2CardString+".svg"
+                        source: "Cards/"+simulator.b2CardString+parent.imageExtension
                     }
 
                     Image {
@@ -118,7 +119,7 @@ Window {
                         anchors.verticalCenter: parent.verticalCenter
                         height: parent.cardImageHeight
                         fillMode: Image.PreserveAspectFit
-                        source: "Cards/"+simulator.b3CardString+".svg"
+                        source: "Cards/"+simulator.b3CardString+parent.imageExtension
                     }
                 }
             }

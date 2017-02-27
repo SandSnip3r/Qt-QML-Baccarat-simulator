@@ -52,5 +52,57 @@
         <file>Cards/TD.svg</file>
         <file>Cards/TH.svg</file>
         <file>Cards/TS.svg</file>
+        <file>Cards/2C.png</file>
+        <file>Cards/2D.png</file>
+        <file>Cards/2H.png</file>
+        <file>Cards/2S.png</file>
+        <file>Cards/3C.png</file>
+        <file>Cards/3D.png</file>
+        <file>Cards/3H.png</file>
+        <file>Cards/3S.png</file>
+        <file>Cards/4C.png</file>
+        <file>Cards/4D.png</file>
+        <file>Cards/4H.png</file>
+        <file>Cards/4S.png</file>
+        <file>Cards/5C.png</file>
+        <file>Cards/5D.png</file>
+        <file>Cards/5H.png</file>
+        <file>Cards/5S.png</file>
+        <file>Cards/6C.png</file>
+        <file>Cards/6D.png</file>
+        <file>Cards/6H.png</file>
+        <file>Cards/6S.png</file>
+        <file>Cards/7C.png</file>
+        <file>Cards/7D.png</file>
+        <file>Cards/7H.png</file>
+        <file>Cards/7S.png</file>
+        <file>Cards/8C.png</file>
+        <file>Cards/8D.png</file>
+        <file>Cards/8H.png</file>
+        <file>Cards/8S.png</file>
+        <file>Cards/9C.png</file>
+        <file>Cards/9D.png</file>
+        <file>Cards/9H.png</file>
+        <file>Cards/9S.png</file>
+        <file>Cards/AC.png</file>
+        <file>Cards/AD.png</file>
+        <file>Cards/AH.png</file>
+        <file>Cards/AS.png</file>
+        <file>Cards/JC.png</file>
+        <file>Cards/JD.png</file>
+        <file>Cards/JH.png</file>
+        <file>Cards/JS.png</file>
+        <file>Cards/KC.png</file>
+        <file>Cards/KD.png</file>
+        <file>Cards/KH.png</file>
+        <file>Cards/KS.png</file>
+        <file>Cards/QC.png</file>
+        <file>Cards/QD.png</file>
+        <file>Cards/QH.png</file>
+        <file>Cards/QS.png</file>
+        <file>Cards/TC.png</file>
+        <file>Cards/TD.png</file>
+        <file>Cards/TH.png</file>
+        <file>Cards/TS.png</file>
     </qresource>
 </RCC>
