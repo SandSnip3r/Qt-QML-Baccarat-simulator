@@ -149,6 +149,33 @@ Window {
                     }
                 }
 
+                RoundButton {
+                    id: slowDownButton
+                    width: playButton.width
+                    height: playButton.height
+                    anchors.horizontalCenter: playButton.horizontalCenter
+                    anchors.top: playButton.bottom
+                    anchors.topMargin: height * .25
+                    text: "Slow down"
+                    radius: playButton.radius
+                    onClicked: {
+                        console.log("slower")
+                    }
+                }
+
+                RoundButton {
+                    width: playButton.width
+                    height: playButton.height
+                    anchors.horizontalCenter: playButton.horizontalCenter
+                    anchors.top: slowDownButton.bottom
+                    anchors.topMargin: height * .25
+                    text: "Speed up"
+                    radius: playButton.radius
+                    onClicked: {
+                        console.log("faster")
+                    }
+                }
+
                 Rectangle {
                     id: textBox
                     width: parent.width * .3
@@ -161,23 +188,25 @@ Window {
                     color: "#5500AA"
                     Column {
                         anchors.fill: parent
+                        spacing: height * .05
+                        padding: height * .05
                         Text {
-                            anchors.horizontalCenter: parent.horizontalCenter
-                            height: textBox.height/2
                             width: parent.width
                             color: "white"
                             text: simulator.gamePlayedCount + (simulator.gamePlayedCount == 1 ? " game" : " games") + " played"
                             horizontalAlignment: Text.AlignHCenter
-                            verticalAlignment: Text.AlignVCenter
                         }
                         Text {
-                            anchors.horizontalCenter: parent.horizontalCenter
-                            height: textBox.height/2
                             width: parent.width
                             color: "white"
                             text: "Player score: " + simulator.playerScore + ", Banker score: " + simulator.bankerScore
                             horizontalAlignment: Text.AlignHCenter
-                            verticalAlignment: Text.AlignVCenter
+                        }
+                        Text {
+                            width: parent.width
+                            color: "white"
+                            text: "Games per second: " + 3
+                            horizontalAlignment: Text.AlignHCenter
                         }
                     }
                 }
