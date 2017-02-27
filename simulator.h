@@ -8,7 +8,7 @@ class Simulator : public QObject
 {
     Q_OBJECT
     Q_PROPERTY(bool running READ isRunning NOTIFY runningChanged)
-    Q_PROPERTY(int gamePlayedCount READ getGamePlayedCount NOTIFY mostRecentGameUpdated)
+    Q_PROPERTY(int gamePlayedCount READ getGamePlayedCount NOTIFY gameCountUpdated)
     Q_PROPERTY(int playerScore READ getPlayerScore NOTIFY mostRecentGameUpdated)
     Q_PROPERTY(int bankerScore READ getBankerScore NOTIFY mostRecentGameUpdated)
     Q_PROPERTY(QString p1CardString READ getP1CardString NOTIFY mostRecentGameUpdated)
@@ -36,6 +36,7 @@ public:
     QString getB3CardString() const;
 signals:
     void runningChanged();
+    void gameCountUpdated();
     void mostRecentGameUpdated();
 public slots:
     void play();

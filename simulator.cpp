@@ -34,7 +34,10 @@ void Simulator::play() {
 void Simulator::gameFinished(const Game &game) {
     mostRecentGame = game;
     ++gamePlayedCount;
-    emit mostRecentGameUpdated();
+    emit gameCountUpdated();
+    if (gamePlayedCount%1000 == 0) {
+        emit mostRecentGameUpdated();
+    }
 }
 
 int Simulator::getGamePlayedCount() const {
